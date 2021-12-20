@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block navtab %}
+<nav class="nav nav-pills nav-justified">
+    <a class="nav-link" href="http://127.0.0.1:8000/documentation">Introduction</a>
+    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/documentation/faq">Frequently Asked
+        Questions</a>
+    <a class="nav-link" href="http://127.0.0.1:8000/documentation/policy">Interaction Policy</a>
+    <a class="nav-link" href="http://127.0.0.1:8000/documentation/privacy-policy">Privacy Policy</a>
+</nav>
+{% endblock %}
+<h1 class="text-center">The official DogBook FAQ</h1>
+<br>
+<p class="lead text-center">
+  We know that you'll have some doubts and hence created this page for you. For any assistance, please write to us at doghelp@DogBook.org. Tuck into the questions!!!
+</p>
+<br>
+<hr>
+<div class="container">
+            <h3 class="text-left"> Here's a sample question with h3</h3>
+        <p class="text-left">Here's a sample answer.</p>
+    <br>
+            <h3 class="text-left"> Here's another question with h3</h3>
+        <p class="text-left">Here's another sample answer.</p>
+</div>
+{% endblock %}

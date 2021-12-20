@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="p-3 mb-2 bg-info text-dark">
+    <div class="container">
+        <h2>Profiles</h2>
+        <ul>Here are some of the registered accounts found:</ul>
+        <div class="row">
+            {% for dogg in dogs %}
+            <div class="col">
+                <div class="card" style="width: 20rem; height:35rem;">
+                    <img src="{{dogg.photo}}" class="rounded" alt="...">
+                    <!img src="{{dogg.photo}}" class="card-img-top" style="width: 20rem; " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{dogg.name}}</h5>
+                        <p class="card-text">{{dogg.name}} was born on {{dogg.dob}}. {{dogg.name}} is a {{dogg.breed}}
+                            lives
+                            in {{dogg.location}}</p>
+                        <a href="#" class="btn btn-primary">Profile</a>
+                    </div>
+                </div>
+            </div>
+
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
